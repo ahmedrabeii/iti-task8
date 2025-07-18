@@ -73,7 +73,7 @@ body{
 }
 
 .header{
-  background-image: url('../image/drew-coffman-1872.jpg');
+  background-image: url('../image/drew-coffeman.jpg');
   height: 100vh;
   background-size: cover;
   background-position:center;
@@ -215,4 +215,249 @@ body{
   max-width: 600px;
   height: auto;
   border-radius: 8px;
+}
+
+
+
+/* def => 0px=> 640px */
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav-links a {
+    padding: 2px;
+    font-size: 13px;
+  }
+
+  .header-content {
+    width: 90%;
+    margin-top: 200px;
+  }
+
+  .header-content h1 {
+    font-size: 32px;
+    padding: 7px;
+    
+  }
+
+  .header-content span {
+    font-size: 18px;
+    padding: 7px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  .btn-1, .btn-2 {
+    padding: 12px 16px;
+    font-size: 14px;
+    margin: 5px auto;
+    padding: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .content .text h2 {
+    text-align: left;
+  }
+
+  .content .text p {
+    text-align: left;
+  }
+  
+  .icon{
+    text-align: left;
+  }
+
+  .icon-item{
+    text-align: left;
+  }
+
+  .icon-icon{
+    text-align: left;
+
+  }
+
+  .location-content {
+    flex-direction: column;
+    padding: 20px;
+   
+  }
+
+  .location-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* sm => 641px => 768px */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .header-content h1 {
+    font-size: 40px;
+  }
+
+  .btn-1, .btn-2 {
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .content .text h2 {
+    text-align: left;
+  }
+
+  .content .text p {
+    text-align: left;
+  }
+
+  .location-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items:center;
+  }
+
+  .location-text{
+    text-align: left;
+  }
+
+  .location-text h2{
+    text-align: left;
+  }
+
+  .location-text p{
+    text-align: left;
+  }
+}
+
+
+/* md => 769px => 1024px */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 30px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .header-content h1 {
+    font-size: 55px;
+  }
+
+  .header-content p {
+    font-size: 17px;
+  }
+
+  .btn-1, .btn-2 {
+    font-size: 15px;
+    padding: 16px 22px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  .content .text h2{
+    text-align: left;
+  }
+
+  .content .text p{
+    text-align: left;
+  }
+
+  .location-content {
+    flex-direction: column;
+    padding: 60px;
+  }
+}
+
+
+/* lg => 1025px => 1280px */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .navbar {
+    padding: 40px 50px;
+  }
+
+  .header-content h1 {
+    font-size: 65px;
+  }
+
+  .content {
+    flex-direction: row;
+    padding: 70px;
+  }
+
+  .location-content {
+    flex-direction: row;
+    padding: 70px;
+  }
+}
+
+
+/* xl => 1281px => ...... */
+
+@media screen and (min-width: 1281px) {
+  .navbar {
+    padding: 60px 80px;
+  }
+
+  .header-content h1 {
+    font-size: 70px;
+  }
+
+  .content {
+    padding: 80px 100px;
+  }
+
+  .location-content {
+    padding: 80px 100px;
+  }
 }
